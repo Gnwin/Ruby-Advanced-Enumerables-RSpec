@@ -1,6 +1,6 @@
 require './lib/enumerables'
 
-RSpec.describe 'Enumerable' do
+RSpec.describe Enumerable do
   let(:array_of_numbers) { [1, 2, 3, 4, 5] }
   let(:my_results) { [] }
 
