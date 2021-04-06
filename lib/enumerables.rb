@@ -8,11 +8,13 @@ module Enumerable
   # 3.
   def my_each
     block_given? ? length.times { |idx| yield(self[idx]) } : to_enum(__method__)
+    self
   end
 
   # 4.
   def my_each_with_index
     block_given? ? length.times { |idx| yield(self[idx], idx) } : to_enum(__method__)
+    self
   end
 
   # 5.
