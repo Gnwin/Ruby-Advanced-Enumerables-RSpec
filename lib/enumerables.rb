@@ -8,11 +8,11 @@ module Enumerable
   # 3.
   def my_each
     if block_given?
-      length.times do |idx| 
-        yield(self[idx]) 
+      length.times do |idx|
+        yield(self[idx])
       end
       self
-    else 
+    else
       to_enum(__method__)
     end
   end
@@ -20,7 +20,7 @@ module Enumerable
   # 4.
   def my_each_with_index
     if block_given?
-      length.times do |idx| 
+      length.times do |idx|
         yield(self[idx], idx)
       end
       self

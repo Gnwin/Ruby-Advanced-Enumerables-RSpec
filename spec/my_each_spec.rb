@@ -7,13 +7,13 @@ RSpec.describe 'Enumerable' do
   describe '#my_each' do
     context 'when a block is passed' do
       it 'returns the calling array' do
-        expect(array_of_numbers.my_each{ |num| puts num }).to eql(array_of_numbers)
+        expect(array_of_numbers.my_each { |num| puts num }).to eql(array_of_numbers)
       end
     end
 
     context 'when a block is passed' do
       it 'does not return an empty array' do
-        expect(array_of_numbers.my_each{ |num| puts num }).to_not eql(my_results)
+        expect(array_of_numbers.my_each { |num| puts num }).to_not eql(my_results)
       end
     end
 

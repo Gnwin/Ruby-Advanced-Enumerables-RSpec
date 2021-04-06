@@ -10,7 +10,7 @@ RSpec.describe Enumerable do
   describe '#my_each_with_index' do
     context 'when a block is passed' do
       it 'returns the calling array' do
-        arr1 = array_of_numbers.my_each_with_index do |item, index| 
+        arr1 = array_of_numbers.my_each_with_index do |item, index|
           puts item
           puts index
         end
@@ -20,7 +20,7 @@ RSpec.describe Enumerable do
 
     context 'when a block is passed' do
       it 'returns the calling array' do
-        arr1 = array_of_numbers.my_each_with_index do |item, index| 
+        arr1 = array_of_numbers.my_each_with_index do |item, index|
           puts item
           puts index
         end
