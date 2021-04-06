@@ -7,14 +7,26 @@
 module Enumerable
   # 3.
   def my_each
-    block_given? ? length.times { |idx| yield(self[idx]) } : to_enum(__method__)
-    self
+    if block_given?
+      length.times do |idx| 
+        yield(self[idx]) 
+      end
+      self
+    else 
+      to_enum(__method__)
+    end
   end
 
   # 4.
   def my_each_with_index
-    block_given? ? length.times { |idx| yield(self[idx], idx) } : to_enum(__method__)
-    self
+    if block_given?
+      length.times do |idx| 
+        yield(self[idx], idx)
+      end
+      self
+    else
+      to_enum(__method__)
+    end
   end
 
   # 5.
