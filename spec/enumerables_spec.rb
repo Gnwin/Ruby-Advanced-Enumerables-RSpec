@@ -1,1 +1,1 @@
-require './lib/enumerables.rb'
+require './lib/enumerables'
