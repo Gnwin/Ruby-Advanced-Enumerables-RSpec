@@ -2,12 +2,8 @@ require './lib/enumerables'
 
 RSpec.describe Enumerable do
   let(:array_of_numbers) { [1, 2, 3, 4, 5] }
-  # let(:my_hash) { { obj: 'Object', obj1: 'Object1' } }
-  let(:my_results) { [] }
   let(:str_array) { %w[cat sheep bear] }
   let(:my_range) { (5..10) }
-  let(:any_array) { [nil, false, true] }
-  # let(:my_proc) { proc { |item| item * 2 } }
 
   describe '#my_inject' do
     context 'when a block is passed without an argument' do
