@@ -3,12 +3,10 @@ require './lib/enumerables'
 RSpec.describe Enumerable do
   let(:array_of_numbers) { [1, 2, 3, 4, 5] }
   let(:str_array) { %w[ant bear cat] }
-  # let(:my_hash) { { obj: 'Object', obj1: 'Object1' } }
   let(:my_results) { [] }
   let(:mixed_array) { [1, 3.14, 42] }
   let(:any_array) { [nil, false, true] }
   let(:nil_array) { [nil] }
-  # let(:my_proc) { proc { |item| item * 2 } }
 
   describe '#my_none?' do
     context 'when a block is passed' do
